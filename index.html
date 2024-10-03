@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Choudhary - Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2c5282;
+            --text-color: #2d3748;
+            --bg-color: #ffffff;
+            --section-bg: #f7fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.3;
+            color: var(--text-color);
+            background: var(--bg-color);
+            font-size: 9pt;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0.5cm;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 0.3cm;
+            padding-bottom: 0.3cm;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 16pt;
+            color: var(--primary-color);
+            margin-bottom: 0.1cm;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5cm;
+            margin-top: 0.2cm;
+            font-size: 8pt;
+        }
+
+        .section {
+            margin-bottom: 0.4cm;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.2cm;
+            padding-bottom: 0.1cm;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 0.3cm;
+            font-size: 8pt;
+        }
+
+        .education-table th,
+        .education-table td {
+            padding: 0.1cm;
+            border: 1px solid var(--border-color);
+        }
+
+        .experience-item {
+            margin-bottom: 0.3cm;
+            padding-left: 0.2cm;
+            border-left: 1px solid var(--secondary-color);
+        }
+
+        .experience-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 0.1cm;
+        }
+
+        .experience-details {
+            font-style: italic;
+            margin-bottom: 0.1cm;
+            font-size: 8pt;
+        }
+
+        ul, ol {
+            padding-left: 0.5cm;
+            margin-bottom: 0.2cm;
+        }
+
+        li {
+            margin-bottom: 0.1cm;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.2cm;
+            margin-bottom: 0.3cm;
+        }
+
+        .skill-category {
+            padding: 0.1cm;
+            background: var(--section-bg);
+            border-radius: 2px;
+            font-size: 8pt;
+        }
+
+        .publications {
+            padding-left: 0.5cm;
+            font-size: 8pt;
+        }
+
+        .publications li {
+            margin-bottom: 0.2cm;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.3cm;
+        }
+
+        .project-card {
+            background: var(--section-bg);
+            border-radius: 4px;
+            padding: 0.2cm;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-title {
+            color: var(--primary-color);
+            font-size: 9pt;
+            font-weight: bold;
+            margin-bottom: 0.1cm;
+        }
+
+        .project-subtitle {
+            color: var(--secondary-color);
+            font-size: 8pt;
+            font-style: italic;
+            margin-bottom: 0.1cm;
+        }
+
+        .project-details {
+            list-style-type: none;
+            padding-left: 0.3cm;
+        }
+
+        .project-details li {
+            margin-bottom: 0.1cm;
+            position: relative;
+            font-size: 8pt;
+        }
+
+        .project-details li::before {
+            content: "•";
+            position: absolute;
+            left: -0.3cm;
+            color: var(--secondary-color);
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                margin: 0;
+                padding: 0.5cm;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            @page {
+                margin: 0.5cm;
+                size: A4;
+            }
+        }
+    </style>
+<body>
+    <div class="container">
+        <header>
+            <h1>AJAY CHOUDHARY</h1>
+            <p>Indian Institute of Management Ahmedabad</p>
+            <div class="contact-info">
+                <a href="mailto:ajayc@iima.ac.in">
+                    <i class="fas fa-envelope"></i>
+                    ajayc@iima.ac.in
+                </a>
+                <a href="tel:8878883584">
+                    <i class="fas fa-phone"></i>
+                    8878883584
+                </a>
+                <a href="https://linkedin.com/in/ajay-choudhary-7576277a">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/ajayiiti">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="http://people.iiti.ac.in/~ms1904101003/">
+                    <i class="fas fa-globe"></i>
+                    Website
+                </a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+            <p>Experienced data analyst and researcher with a strong background in computer science and engineering. Skilled in data analysis, machine learning, and financial modeling. Passionate about leveraging technology to solve complex business problems in various sectors.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <table class="education-table">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Specialization</th>
+                    <th>CPI/%</th>
+                </tr>
+                <tr>
+                    <td>MS ( By Research)</td>
+                    <td>Indian Institute of Technology, Indore</td>
+                    <td>Computer Science & Engineering</td>
+                    <td>8.32</td>
+                </tr>
+                <tr>
+                    <td>B.E.</td>
+                    <td>Institute of Engineering & Technology, Indore</td>
+                    <td>Information Technology</td>
+                    <td>70.83%</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>Jawahar Navodaya Vidhyalaya, Khargone</td>
+                    <td>PCM + CS</td>
+                    <td>83.4%</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>Jawahar Navodaya Vidhyalaya, Khargone</td>
+                    <td>-</td>
+                    <td>9.4</td>
+                </tr>
+            </table>
+        </section>
+<br>
+        <section class="section">
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+            <div class="experience-item">
+                <div class="experience-title">Economic and Financial Data Analyst | IIM Ahmedabad</div>
+                <div class="experience-details">Sept 2024 - Present</div>
+                <ul>
+                    <li>Lead data analysis for the "Ease of Doing Business in Indian States" project</li>
+                    <li>Apply advanced data science techniques to extract insights from complex economic datasets</li>
+                    <li>Collaborate with faculty to develop data-driven policy recommendations</li>
+                </ul>
+            </div>
+<br>
+            <div class="experience-item">
+                <div class="experience-title">Research Associate | Indian School of Business</div>
+                <div class="experience-details">Jun 2022 - Aug 2024</div>
+                <ul>
+                    <li>Analyzed financial datasets (Compustat, CRSP, Dealscan, IBES) to create variables for regression models</li>
+                    <li>Conducted analysis on secondary loan market data, creating bank proxies and running regression models</li>
+                    <li>Utilized fuzzy matching techniques to analyze large patent datasets to merge it with FEMA Disaster data</li>
+                    <li>Assisted in summarizing academic papers and organizing research materials, improving research efficiency</li>
+                </ul>
+            </div>
+<br>
+            <div class="experience-item">
+                <div class="experience-title">Research Intern | Volvo Eicher Commercial Vehicle Limited</div>
+                <div class="experience-details">Aug 2021 - Jan 2022</div>
+                <ul>
+                    <li>Developed machine learning models to detect failures in commercial vehicle engines for the "up-time center business analytics" project</li>
+                    <li>Improved predictive maintenance strategies, potentially reducing downtime and maintenance costs</li>
+                </ul>
+            </div>
+<br>
+            <div class="experience-item">
+                <div class="experience-title">Research Intern | IIT Jammu</div>
+                <div class="experience-details">April 2022 - May 2022</div>
+                <ul>
+                    <li>Led a team of four interns on a solar forecasting and uncertainty quantification project for the J&K region</li>
+                    <li>Developed models to identify suitable locations in J&K region for establishing solar plants.</li>
+                </ul>
+            </div>
+<br>
+            <div class="experience-item">
+                <div class="experience-title">Application Development Associate | Accenture Solutions Private Limited</div>
+                <div class="experience-details">May 2017 - July 2018</div>
+                <ul>
+                    <li>Designed and maintained a Java-based employee management portal</li>
+                    <li>Developed automated Python scripts for the SpatialNET tool, enhancing efficiency for an Australian client</li>
+                </ul>
+            </div>
+        </section>
+
+<br>
+
+        <section class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Programming:</strong> Python, R, Java, C++, SQL
+                </div>
+                <div class="skill-category">
+                    <strong>Data Analysis:</strong> Pandas, NumPy, SciPy, STATA, SAS
+                </div>
+                <div class="skill-category">
+                    <strong>Machine Learning:</strong> Scikit-learn, TensorFlow, PyTorch
+                </div>
+                <div class="skill-category">
+                    <strong>Visualization:</strong> Matplotlib, Seaborn, Power BI
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+        <br>
+<br>
+        <section class="section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Predictions in Non-stationary Data-Streams</div>
+                    <div class="project-subtitle">MS Thesis - Fuzzy Clustering-based Adaptive Regression</div>
+                    <ul class="project-details">
+                        <li>Developed a novel approach for handling concept drift in data stream regression</li>
+                        <li>Implemented the algorithm using Apache Spark for scalability</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">Image Denoising using Autoencoders</div>
+                    <div class="project-subtitle">Deep Learning Project</div>
+                    <ul class="project-details">
+                        <li>Implemented various autoencoder architectures for image denoising</li>
+                        <li>Achieved significant improvement in image quality metrics</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-title">GetMeIntern</div>
+                    <div class="project-subtitle">Online Internship Portal</div>
+                    <ul class="project-details">
+                        <li>Developed a web application to connect students with internship opportunities</li>
+                        <li>Implemented features such as user authentication, job posting, and application tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">PUBLICATIONS</h2>
+            <ol class="publications">
+                <li>Choudhary, A., Jha, P., Tiwari, A., & Bharill, N. (2021). <b>A Brief Survey on Concept Drifted Datastream Regression</b>. In Soft Computing for Problem Solving (pp. 635-644). Springer, Singapore.</li>
+                <li>Choudhary, A., Jha, P., Tiwari, A., Bharill, N., & Ratnaparkhe, M. (2021). <b>Scalable Fuzzy Clustering-based Regression to Predict the Isoelectric Points of the Plant Protein Sequences using Apache Spark</b>. In 2021 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE) (pp. 1-6). IEEE.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">CERTIFICATIONS & ACHIEVEMENTS</h2>
+            <ul>
+                <li>Google AI | Explore ML Beginner and Intermediate Track</li>
+                <li>Coursera: "Crash Course on Python", "Introduction to TensorFlow for AI, ML, and Deep Learning"</li>
+                <li>Qualified for <b>Junior Research Fellowship & Assistant Professor </b> through <b>UGC-NET</b> June 2021</li>
+                <li>All India Rank 1515 in Graduate Aptitude Test in Engineering <b>(GATE) 2019 </b></li>
+                <li>Rank <b>2002</b> in Pre-Engineering Test <b>(MPPET)</b> 2012</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">VOLUNTEERING & LEADERSHIP</h2>
+            <ul>
+                <li>Developed web pages for <b>'Rashtriya Avishkar Abhiyan'</b>, <b>'Ek Bharat Shreshtha Bharat'</b>, and <b>'RuTAG'</b> clubs at <b>IIT Indore</b></li>
+                <li>Head Coordinator for Nature Talks by Prakriti club, <b>CulturalMela-FLUXUS 2021</b></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
